@@ -5,7 +5,7 @@ import SectionHeader from "./components/SectionHeader/SectionHeader";
 import { TextField } from "../../../../components/TextField/TextField";
 import { VerticalContainer } from "../../../../styles/commonStyles";
 import styled from "styled-components";
-import { useTranslation } from "react-i18next";
+import useTranslation from "../../../../hooks/useTranslation";
 
 const WidgetContainer = styled(VerticalContainer)`
   min-height: 100%;
@@ -60,7 +60,7 @@ export default function DetailsView({ resource }) {
         <SectionContainer>
           <SectionHeader
             {...{
-              headerText: t("DETAILS_VIEW_TITLE"),
+              headerText: t("TITLE"),
             }}
           />
           <FieldsContainer>

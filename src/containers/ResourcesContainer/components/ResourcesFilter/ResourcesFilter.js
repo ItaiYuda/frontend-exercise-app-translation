@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { ReactComponent as SearchIcon } from "../../../../assets/icons/search.svg";
 import { TextField } from "../../../../components/TextField/TextField";
 import { inputBackgroundColor } from "../../../../styles/colors";
-import { useTranslation } from "react-i18next";
+import useTranslation from "../../../../hooks/useTranslation";
 
 const FilterFieldContainer = styled.div`
   display: flex;

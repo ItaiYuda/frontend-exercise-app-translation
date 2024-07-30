@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { HeaderText, SubHeaderText } from "../../../../styles/commonStyles";
-import { useTranslation } from "react-i18next";
+import useTranslation from "../../../../hooks/useTranslation";
 import LanguageControl from "../LanguageControl/LanguageControl";
 
 const ResourceHeaderText = styled(HeaderText)`

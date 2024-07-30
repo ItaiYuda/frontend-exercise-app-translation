@@ -8,8 +8,19 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en-US",
-    debug: true, // Enable debugging to see what's happening in the console
+    fallbackLng: {
+      en: ["en-US"],
+      default: ["en-US"],
+    },
+    lng: "en-US",
+    debug: true,
+    ns: [
+      "ResourcesHeader",
+      "LanguageControl",
+      "ResourcesFilter",
+      "DetailsView",
+    ],
+    defaultNS: "ResourcesHeader",
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
@@ -27,6 +38,7 @@ i18n
     react: {
       useSuspense: false,
     },
+    load: "currentOnly",
   });
 
 export default i18n;
