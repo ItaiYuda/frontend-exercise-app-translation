@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import LocalStorage from "../../../../services/localStorage";
 import { useTranslation } from "react-i18next";
 
 const StyledButtonGroup = styled.div`
