@@ -8,11 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: {
-      en: ["en-US"],
-      default: ["en-US"],
-    },
-    lng: "en-US",
+    fallbackLng: "en-US",
     debug: true,
     ns: [
       "ResourcesHeader",

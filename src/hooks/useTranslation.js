@@ -6,8 +6,10 @@ export default function useTranslation(namespace) {
   const { t, i18n } = useTranslationI18Next(namespace);
 
   useEffect(() => {
-    console.log(i18n.hasLoadedNamespace(namespace));
-    if (i18n.isInitialized || (namespace && i18n.hasLoadedNamespace(namespace))) {
+    if (
+      i18n.isInitialized ||
+      (namespace && i18n.hasLoadedNamespace(namespace))
+    ) {
       setIsLoaded(true);
     }
   }, [i18n.isInitialized, namespace]);
